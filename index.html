@@ -4,12 +4,23 @@
 <meta charset="utf-8">
 <title>Adleida公司主页</title>
 <link rel="shortcut icon" href="http://chuantu.biz/t2/9/1433734487x1822611362.png" />
+
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/flexslider.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="./css/loop.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+
+<style type="text/css">		
+.banner { position: relative; overflow: auto;}
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+</style>
+
 <script src="js/jquery.min.js"></script>
+<script src="./js/unslider.min.js"></script>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
 <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -28,14 +39,39 @@
     </div>
   </div>
 </div>
-<div class="banner text-center">
+
+<!-- loop replace -->
+<!-- <div class="banner text-center">
   <div class="container">
     <div class="banner-info">
       <h1>未来的广告行业不一样！</h2>
       <p> 全面拥抱广告程序化购买大时代，提供全方位的程序化广告投放以及效果分析服务。</p>
       <a class="banner_btn" href="search.html">查看更多</a> </div>
   </div>
+</div> -->
+
+<div class="banner text-center">
+    <ul>
+        <li style="background-image: url('./images/sunset.jpg');">
+          <br /> <br /> <br /> <br />
+          <h1>未来的广告行业不一样！</h2>
+          <p> Adleida 提供专业竞价服务 </p>
+          <a class="banner_btn" href="search.html">了解 ADX</a>
+        </li>
+        <li style="background-image: url('./images/subway.jpg');">
+          <br /> <br /> <br /> <br />
+          <h1>可视化展示大数据分析结果</h2>
+          <p> 专业后端服务 </p>
+          <a class="banner_btn" href="search.html">查看更多</a>
+        </li>
+        <li style="background-image: url('./images/shop.jpg');">
+          <br /> <br /> <br /> <br />
+          <h1>广告交易所 程序化购买 构筑新世代交易规则</h2>
+          <p> 全面拥抱广告程序化购买大时代，提供全方位的程序化广告投放以及效果分析服务。</p>
+        </li>
+    </ul>
 </div>
+
 <div class="main">
 <div class="content_white">
   <h2>产品与服务</h2>
@@ -157,5 +193,12 @@
 </div>
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.flexslider.js"></script>
+<script>		
+    $('.banner').unslider({
+        arrows: true,
+        fluid: true,
+        dots: true
+    });
+</script>
 </body>
 </html>
