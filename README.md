@@ -1,2 +1,2 @@
-# adleida
-this is adleida Official website
+# Adleida website
+adleida official website
